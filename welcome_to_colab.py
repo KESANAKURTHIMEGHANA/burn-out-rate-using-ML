@@ -26,7 +26,6 @@ import seaborn as sns
 
 df.describe()
 
-# @title Default title text
 # Handle missing values for numeric columns only
 numeric_columns = df.select_dtypes(include=np.number).columns
 df[numeric_columns] = df[numeric_columns].fillna(df[numeric_columns].mean())
